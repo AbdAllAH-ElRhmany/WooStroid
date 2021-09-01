@@ -1,0 +1,360 @@
+/*
+  1-General Style
+  2-Extended Styles && Utilities && media
+  3-Pages
+    3.0-Common Sections
+        3.0.1 header section
+        3.0.2 director section
+        3.0.3 footer Section
+    3.1-home page    
+        3.1.1 banner Section 
+        3.1.2 categories Section 
+        3.1.3 newProducts Section
+        3.1.4 specialProducts Section
+        3.1.5 brands Section
+    3.2-Delivery Page
+        3.2.1 delivery Section 
+    3.3-Payment Page
+        3.3.1 payment Section
+    3.4-cart page
+        3.4.1 cartList Section
+    3.5-ProductDetails page
+        3.5.1 product-preview Section 
+        3.5.2 details Section 
+        3.5.3 product-info Section 
+    3.6-favourite page
+        3.6.1 favouritePro Section  
+    3.7-about page
+        3.7.1 about Section  
+        3.7.2 testimonial Section  
+        3.7.3 counter Section  
+        3.7.4 team Section  
+        3.7.5 partner Section  
+    3.8-contact page
+        3.8.1 map Section
+        3.8.2 contact Section
+    3.9-blog page
+        3.9.1 blog-bg Section
+    3.10-check out page
+        3.10.1 checkOut Section
+*/
+
+/* 1-Common Styles */
+/*
+    -colors
+    -shop-btn
+    -cart-btn
+    -overlay
+    -search
+    -border hover
+    -section header
+    -section padding
+    -description style
+    -massage style
+*/
+
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+
+
+
+
+// 3.1-home page    
+
+// 3.0.1 header section
+@import 'header';
+
+// 3.1.1 banner Section
+.banner{
+    .owl-carousel{
+        .owl-stage{
+           padding: 0 !important;
+        }
+        .item{
+            .banner-img{
+                background-size: cover    ;
+                background: url(../images/banner/slider-1-scaled.jpg) center bottom no-repeat !important;
+                height: 600px;
+                &.first{
+                    background: url(../images/banner/slider-2-scaled.jpg) center bottom no-repeat !important;
+                }
+                &.second{
+                    background: url(../images/banner/slider-3-scaled.jpg) center bottom no-repeat !important;
+                }
+                .banner-info{
+                    @include TranslatY(60px);
+                    text-align: center;
+                    .banner-title{
+                        font-size: 42px;
+                        letter-spacing: 0.84px;
+                        margin-bottom: 30px !important;   
+                    }
+                    .banner-subtitle{
+                        font-size: 18px;
+                        display: block;
+                        letter-spacing: 0.36px;
+                        margin-bottom: 5px;
+                        
+                    }
+                    .banner-link{
+                        padding: 15px 30px;
+                        @include borderR(4px);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* banner media */
+
+@include Sm{
+    .banner-info{
+        .banner-title{
+            font-size: 26px !important;
+        }
+        .banner-subtitle{
+            font-size: 16px !important;
+            
+        }
+    }
+}
+
+// 3.1.2 categories Section
+.categories{
+    border-bottom: 1px solid $border;
+    .categories-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        font-size: 19px;
+        .categories-item{
+            text-align: center;
+            text-transform: capitalize;
+            @include Transition;
+            position: relative;
+            &:hover{
+                @extend %boxshadow;
+            }
+            .categories-item-content{
+                .categories-item-img{
+                    width: 100%;
+                }
+                .categories-item-title{
+                    position: absolute;
+                    bottom: 6%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* categories media */
+@include Sm{
+    .categories-content{
+        grid-template-columns: repeat(1, 1fr) !important; 
+    }
+}
+@include MdMore{
+    .categories-content{
+        grid-template-columns: repeat(2, 1fr) !important; 
+    }
+}
+// 3.1.3 newProducts Section
+// 3.1.4 specialProducts Section
+.products{
+    border-bottom: 1px solid $border;
+    .owl-carousel{
+        position: relative;
+        .item{ 
+            text-align: center;
+            img{
+                max-width: 100%;
+                margin-bottom:7px;
+            }
+            .product-name{
+                max-width: 70%;
+                font-size: 16px;
+                letter-spacing: 0.32px;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: auto;
+                margin-bottom: 5px;
+            }
+            .product-price{
+                display: block;
+                margin-bottom: 8px;
+            }
+            .addToCart{
+                margin: auto;
+                text-transform: capitalize;
+                padding: 5px 20px;
+            }
+        }
+        .owl-nav{
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            button{
+                position: absolute;
+                outline: 0 !important;
+                background: $normal-color;
+                color: $white-color;
+                @include WidHei(36px, 36px);
+                @include borderR(50%);
+                @include Transition;
+                &:hover{
+                    background: $normal-color;
+                    opacity: .7;
+                }
+                &.owl-next{
+                    left: 0;
+                }
+                &.owl-prev{
+                    right: 0;
+                }
+            }
+        }
+        .owl-dots{
+            .owl-dot{
+                outline: 0 !important;
+                span{
+                    @include Transition;
+                    &:hover{
+                        background-color: $normal-color !important;
+                    }
+                }
+                &.active{
+                    span{
+                        background-color: $normal-color !important;
+                    }
+                }
+            }
+        }
+    }
+    &.specialProducts{
+        border: 0;
+    }
+}
+
+// 3.1.5 brands Section
+
+.brands{
+    padding-bottom: 60px;
+    .brands-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        @each $bg in $brandsBg {
+            .#{$bg}{
+                background: url(../images/brands/#{$bg}.webp) no-repeat center;
+            }
+        }
+        .brand-item{
+            background-size: cover;
+            height: 275px;
+            text-align: center;
+            padding: 20px 10px;
+            .brand-title{
+                font-size: 18px;
+                text-decoration: underline;
+                @include Transition;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            .brand-desc{
+                margin-top: 5px;
+                color: $gray-color;
+                letter-spacing: 0.32px;
+            }
+        }
+    }
+}
+/* brands media */
+@include Sm{
+    .brands-content{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+// 3.0.3 footer 
+
+@import 'footer';
+
+
+
+// 3.2 Delivery Page
+
+// 3.2.1 delivery Section 
+
+@import 'delivery';
+
+
+
+// 3.3 Payment Page
+// 3.3.1 payment Section 
+
+@import 'payment';
+
+
+
+// 3.4 Contact Page 
+// 3.4.1 contact Section 
+
+@import 'contact';
+
+
+
+
+// 3.5 FAQ Page 
+// 3.5.1 faq Section 
+
+@import 'faq';
+
+
+
+// 3.6 Product Page 
+// 3.6.1 product Section 
+
+@import 'product';
+
+
+
+// 3.7 Shop Page 
+// 3.7.1 shop Section 
+
+@import 'shop';
+ 
+
+
+// 3.8 Cart Page 
+// 3.8.1 cart Section 
+
+@import 'cart';
+
+
+// 3.9 Compare Page 
+// 3.9.1 compare Section 
+
+@import '_compare';
+
+
+// 3.10 Favourite Page 
+// 3.10.1 favourite Section 
+
+@import '_favourite';
+
+
+
+// 3.11 Checkout Page 
+// 3.11.1 checkout Section 
+
+@import 'checkout';

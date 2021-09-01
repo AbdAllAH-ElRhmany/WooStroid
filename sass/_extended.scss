@@ -1,0 +1,92 @@
+@import 'utilities';
+@import 'media';
+
+// 2-General styles extends
+
+%iconListStyle{
+    ul{
+        display: flex;
+        li{
+            margin-left: 20px;
+            font-size: 18px;
+        }
+    }
+}
+%boxshadow{
+    box-shadow: 0px 4px 14px 0px #2222221a;
+}
+
+%title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 7px !important;
+}
+%title-desc{
+    color: $gray-color;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+%ulInDynamicTabs{
+    margin-top: 40px;
+    display: flex;
+    border-bottom: 1px solid $border;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+        cursor: pointer;
+        color: $gray-color;
+        text-transform: capitalize;
+        padding: 4px 20px;
+        position: relative;
+        i{
+            margin-right: 10px;
+            color: $primary-color !important;
+        }
+        &::after{
+            content: '';
+            display: none;
+            position: absolute;
+            @include Dirbl(-1px, 0);
+            @include WidHei(100%, 1px);
+            background-color: $primary-color;
+        }
+        &:hover,&.active{
+            color: $normal-color;
+        }
+        &:hover::after, &.active:after{
+            display: block;
+        }
+
+    }
+}
+
+%tableHeader{
+    border-bottom: 1px solid $border;
+    font-size: 14px;
+    font-weight: bold;
+    td{
+        padding: 10px;
+        text-transform: capitalize;
+    }
+}
+
+%checkoutBtn{
+    i{
+        font-size: 18px;
+        margin-right: 5px;
+        display: inline-block;
+    }
+    color: $white-color;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 18px;
+    background-color: #27d18b;
+    width: 100%;
+    @include Transition;
+    &:hover{
+        opacity: .8;
+    
+    }
+}

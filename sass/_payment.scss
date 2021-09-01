@@ -1,0 +1,34 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+
+.payment{
+    max-width: 800px;
+    margin: auto;
+    .payment-title{
+        @extend %title;
+    }
+    .payment-desc{
+        @extend %title-desc;
+    }
+    .payment-info-content{
+        padding: 50px 0;
+        .payment-info-content-block{
+            margin-bottom: 50px ;
+            
+            .payment-info-content-title{
+                font-size: 24px;
+                margin-bottom: 15px !important;
+            }
+            .payment-info-content-subtitle{
+                @extend %title-desc;
+                text-align: left !important;
+                margin-bottom: 15px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,99 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+
+footer{
+    border-top: 1px solid $border;
+    .footer-content-top{
+        .footer-category{
+            li{
+                a{
+                    display: block;
+                    @include Transition;
+                    letter-spacing: 0.32px;
+                    color: $gray-color;
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: $normal-color;
+                    }
+                }
+            }
+        }
+        .signUpForm{
+            margin-bottom: 20px;
+            .form-title{
+                font-size: 18px;
+                letter-spacing: 0.36px;
+                text-align: left;
+                margin-bottom: 20px !important;
+            }
+            input[type="email"]{
+                display: inline !important;
+                width: 70%;
+                padding: 7px 10px;
+                color: $gray-color;
+                border: 1px solid $border !important;
+                @include borderR(4px);
+            }
+            button{
+                @include borderR(4px);
+                padding: 7px 10px;
+                width: 29%;
+                
+            }
+        }
+        .social{
+            display: flex;
+            li{
+                margin-right: 18px;
+                font-size: 18px;
+            }
+        }
+    }
+    .footer-content-bottom{
+        padding: 15px 0;
+        ul{
+            display: flex;
+            margin-bottom: 15px;
+            li{
+                margin-right: 20px;
+                a.active{
+                    color: $primary-color !important;
+                }
+            }
+        }
+    }
+}
+
+// footer media
+
+@include Sm{
+    .signUpForm{
+        .form-title{
+            text-align: center !important;
+        }
+        input[type="email"]{
+            width: 100% !important; 
+            margin-bottom: 15px !important;
+        }
+        button{
+            width: 100% !important;
+            
+        }
+    }
+    .social{
+        justify-content: center !important;
+    }
+    .footer-content-bottom{
+        ul{
+            justify-content: center !important;
+            li{
+                margin-right: 10px !important;
+            }
+        }
+    }
+}

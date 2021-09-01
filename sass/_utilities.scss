@@ -1,0 +1,93 @@
+$primary-color: #1D4AE9;
+$white-color: #ffffff;
+$gray-color: #888888;
+$star-color: #fdbc32;
+$normal-color: #222222;
+$border: #ebebeb;
+
+
+
+@mixin Transition {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+@mixin TransitionOpacity {
+    transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+}
+@mixin TranslatY($y) {
+    transform: translateY($y);
+    -webkit-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -ms-transform: translateY($y);
+    -o-transform: translateY($y);
+}
+@mixin TranslatX($x) {
+    transform: translatex($x) ;
+    -webkit-transform: translatex($x) ;
+    -moz-transform: translatex($x) ;
+    -ms-transform: translatex($x) ;
+    -o-transform: translatex($x) ;
+}
+@mixin TranslatXY($x ,$y) {
+    transform: translate($x ,$y) ;
+    -webkit-transform: translate($x ,$y) ;
+    -moz-transform: translate($x ,$y) ;
+    -ms-transform: translate($x ,$y) ;
+    -o-transform: translate($x ,$y) ;
+}
+@mixin Dir($t, $r, $b, $l) {
+    top: $t !important;
+    right: $r !important;
+    bottom: $b !important;
+    left: $l !important;
+}
+@mixin Dirtr($t, $r) {
+    top: $t ;
+    right: $r ;
+}
+@mixin Dirtb($t, $b) {
+    top: $t ;
+    bottom: $b ;
+}
+@mixin Dirtl($t, $l) {
+    top: $t ;
+    left: $l ;
+}
+@mixin Dirrb( $r, $b) {
+    right: $r ;
+    bottom: $b ;
+}
+@mixin Dirrl( $r, $l) {
+    right: $r ;
+    left: $l ;
+}
+@mixin Dirbl( $b, $l) {
+    bottom: $b ;
+    left: $l ;
+}
+@mixin heroImg{
+    position: absolute;
+    @include Dirtl(50%, 50%);
+    @include TranslatXY(-50%, -50%);
+}
+@mixin borderR ($r){
+    border-radius: $r;
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -ms-border-radius: $r;
+    -o-border-radius: $r;
+}
+@mixin WidHei($w, $h){
+    width: $w;
+    height: $h;
+}
+
+
+$brandsBg: banner_1 banner_2 banner_3 banner_4;

@@ -1,0 +1,439 @@
+[
+	{
+		"id": 1,
+		"inHome": "n",
+		"new": "y",
+		"special": "y",
+		"type": ["","speakers", "phones", "headphones"],
+		"image": [
+			"images/product-images/Apple-AirPods-In-Ear-Bluetooth-Headphones-2-600x600.jpg",
+			"images/product-images/Apple-AirPods-In-Ear-Bluetooth-Headphones-1.jpg",
+			"images/product-images/Apple-AirPods-In-Ear-Bluetooth-Headphones-2.jpg"
+		],
+		"title": "Apple AirPods In-Ear Bluetooth Headphones",
+		"size": ["all"],
+		"color": ["all","white"],
+		"price": 299.00,
+		"productTotalPriceCart": "",
+		"tag": ["apple", "new", "speakers"],
+        "brand": "apple",
+        "os": "IOS",
+        "Manufacturer":"USA",
+        "Warranty":"12 months",
+        "Connectivity": ["bluetooth"],
+		"rate": 3,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+    
+	},
+	{
+		"id": 2,
+		"inHome": "y",
+		"new": "y",
+		"special": "y",
+		"type": ["","phones", "headphones" , "speakers", "tablets"],
+		"image": [
+			"images/product-images/Apple-iPhone-X-64GB-1.jpg",
+			"images/product-images/Apple-iPhone-X-64GB-2.jpg",
+			"images/product-images/Apple-iPhone-X-64GB-3.jpg"
+		],
+		"title": "Apple iPhone X",
+		"size": ["all","all","32 GB", "64 GB"],
+		"color": ["all","white", "black", "rose gold"],
+		"price": 1000.00,
+		"productTotalPriceCart": "",
+		"tag": ["apple", "tablets"],
+        "brand": "apple",
+        "os": "IOS",
+        "Manufacturer":"USA",
+        "Warranty":"6 months",
+        "Connectivity": ["bluetooth", "3G/4G"],
+		"rate": 2,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+	{
+		"id": 3,
+		"inHome": "y",
+		"new": "n",
+		"special": "y",
+		"type": ["","tablets"],
+		"image": [
+			"images/product-images/Final-Clearance-Apple-iPad-32GB-1-600x600.jpg",
+			"images/product-images/Final-Clearance-Apple-iPad-32GB-1.jpg",
+			"images/product-images/Final-Clearance-Apple-iPad-32GB-2.jpg"
+		],
+		"title": "Apple iPad Pro",
+		"size": ["all","64 GB"],
+		"color": ["all","gold"],
+		"price": 950.00,
+		"productTotalPriceCart": "",
+		"tag": ["apple", "tablets"],
+        "brand": "apple",
+        "os": "IOS",
+        "Manufacturer":"USA",
+        "Warranty":"",
+        "Connectivity": ["bluetooth"],
+		"rate": 3,
+		"qty": 0,
+        "waterproof":["all","yes"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+	{
+		"id": 4,
+		"inHome": "y",
+		"new": "y",
+		"special": "n",
+		"type": ["","phones", "video games", "tablets", "virtual reality"],
+		"image": [
+			"images/product-images/Apple-iPad-Pro-2-600x600 (1).jpg",
+			"images/product-images/Apple-iPad-Pro-1.jpg",
+			"images/product-images/Apple-iPad-Pro-3.jpg"
+		],
+		"title": "Apple iPad Pro",
+		"size": ["all","32 GB"],
+		"color": ["all","gold", "black", "rose gold"],
+		"price": 827.99,
+		"productTotalPriceCart": "",
+		"tag": ["apple", "tablets"],
+        "brand": "apple",
+        "os": "IOS",
+        "Manufacturer":"USA",
+        "Warranty":"",
+        "Connectivity": ["bluetooth"],
+		"rate": 4,
+		"qty": 0,
+        "waterproof":["all","yes"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+	{
+		"id": 5,
+		"inHome": "y",
+		"new": "y",
+		"special": "n",
+		"type": ["","phones", "video games","virtual reality"],
+		"image": [
+			"images/product-images/Apple-iPhone-XS-Max-64GB-1.jpg",
+			"images/product-images/Apple-iPhone-XS-Max-64GB-2.jpg"
+		],
+		"title": "Apple iPhone XS Max 64GB",
+		"size": ["all","64 GB"],
+		"color": ["all","gold", "black", "rose gold"],
+		"price": 980.00,
+		"productTotalPriceCart": "",
+		"tag": ["apple", "phone", "new"],
+        "brand": "apple",
+        "os": "IOS",
+        "Manufacturer":"USA",
+        "Warranty":"6 months",
+        "Connectivity": ["bluetooth", "3G/4G", "Wi-Fi"],
+		"rate": 5,
+		"qty": 0,
+        "waterproof":["all","yes"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+	{
+		"id": 6,
+		"inHome": "y",
+		"new": "n",
+		"special": "y",
+		"type": ["","fitness tracking", "phones","smartwatches"],
+		"image": [
+			"images/product-images/Apple-Watch-Series-4-1.jpg",
+			"images/product-images/Apple-Watch-Series-4-2-600x600.jpg"
+		],
+		"title": "Apple Watch Series 4",
+		"size": ["all"],
+		"color": ["all","black"],
+		"price": 255.00,
+		"productTotalPriceCart": "",
+		"tag": ["apple", "watch"],
+        "brand": "apple",
+        "os": "IOS",
+        "Manufacturer":"France",
+        "Warranty":"4 months",
+        "Connectivity": ["bluetooth"],
+		"rate": 3,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+	{
+		"id": 7,
+		"inHome": "y",
+		"new": "n",
+		"special": "y",
+		"type": ["","fitness tracking", "phones","speakers", "headphones"],
+		"image": [
+			"images/product-images/Beats-by-Dr-Dre-Solo3-On-Ear-Sound-Isolating-Bluetooth-Headphones-1-600x600 (1).jpg",
+			"images/product-images/Beats-by-Dr-Dre-Solo3-On-Ear-Sound-Isolating-Bluetooth-Headphones-2.jpg",
+			"images/product-images/Beats-by-Dr-Dre-Solo3-On-Ear-Sound-Isolating-Bluetooth-Headphones-3.jpg"
+		],
+		"title": "Beats by Dr Dre Solo3 On-Ear Sound Isolating Bluetooth Headphones",
+		"size": ["all"],
+		"color": ["all","rose gold"],
+		"price": 654.00,
+		"productTotalPriceCart": "",
+		"tag": ["new", "speakers"],
+        "brand": "Beats by Dr Dre",
+        "os": "Andoriod",
+        "Manufacturer":"China",
+        "Warranty":"",
+        "Connectivity": ["bluetooth"],
+		"rate": 3,
+		"qty": 0,
+        "waterproof":["all","yes"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+    {
+		"id": 8,
+		"inHome": "y",
+		"new": "y",
+		"special": "y",
+		"type": ["","fitness tracking", "phones","smartwatches"],
+		"image": [
+			"images/product-images/Fitbit-Charge-3-Fitness-Tracker-with-Heart-Rate-Monitor-1.jpg",
+			"images/product-images/Fitbit-Charge-3-Fitness-Tracker-with-Heart-Rate-Monitor-2.jpg",
+			"images/product-images/Fitbit-Charge-3-Fitness-Tracker-with-Heart-Rate-Monitor-3.jpg"
+		],
+		"title": "Fitbit Charge 3 Fitness Tracker with Heart Rate Monitor",
+		"size": ["all"],
+		"color": ["all","silver", "blue"],
+		"price": 323.00,
+		"productTotalPriceCart": "",
+		"tag": ["new", "watch"],
+        "brand": "fitbit",
+        "os": "Andoriod",
+        "Manufacturer":"France",
+        "Warranty":"6 months",
+        "Connectivity": ["bluetooth"],
+		"rate": 4,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            },
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+    {
+		"id": 9,
+		"inHome": "y",
+		"new": "n",
+		"special": "y",
+		"type": ["","speakers", "phones","smartwatches", "fitness tracking"],
+		"image": [
+			"images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1.jpg",
+			"images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-2.jpg",
+			"images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-3.jpg"
+		],
+		"title": "JBL Pulse 3 Waterproof Bluetooth Wireless Speaker",
+		"size": ["all"],
+		"color": ["all","gold", "rose gold", "blue"],
+		"price": 430.00,
+		"productTotalPriceCart": "",
+		"tag": ["new", "speakers"],
+        "brand": "JBL",
+        "os": "",
+        "Manufacturer":"China",
+        "Warranty":"",
+        "Connectivity": ["bluetooth"],
+		"rate": 4,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+    {
+		"id": 10,
+		"inHome": "y",
+		"new": "n",
+		"special": "y",
+		"type": ["","virtual reality", "phones","video games", "speakers"],
+		"image": [
+			"images/product-images/Oculus-Go-64GB-VR-Headset-3-600x600.jpg",
+			"images/product-images/Oculus-Go-64GB-VR-Headset-1.jpg",
+			"images/product-images/Oculus-Go-64GB-VR-Headset-2.jpg"
+		],
+		"title": "Oculus Go 64GB VR Headset",
+		"size": ["all"],
+		"color": ["all","silver"],
+		"price": 950.00,
+		"productTotalPriceCart": "",
+		"tag": ["game zone", "new"],
+        "brand": "JBL",
+        "os": "Andoriod",
+        "Manufacturer":"China",
+        "Warranty":"6 months",
+        "Connectivity": ["bluetooth", "Wi-Fi"],
+		"rate": 4,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+    {
+		"id": 11,
+		"inHome": "y",
+		"new": "y",
+		"special": "y",
+		"type": ["","video games", "fitness tracking","virtual reality", "speakers"],
+		"image": [
+			"images/product-images/PlayStation-4-Pro-1TB-Console-1.jpg",
+			"images/product-images/PlayStation-4-Pro-1TB-Console-2.jpg",
+			"images/product-images/PlayStation-4-Pro-1TB-Console-3.jpg"
+		],
+		"title": "PlayStation 4 Pro 1TB Console",
+		"size": ["all"],
+		"color": ["all","black"],
+		"price": 699.99,
+		"productTotalPriceCart": "",
+		"tag": ["game zone", "sale"],
+        "brand": "Sony",
+        "os": "",
+        "Manufacturer":"France",
+        "Warranty":"6 months",
+        "Connectivity": [],
+		"rate": 4,
+		"qty": 0,
+        "waterproof":["all","no"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	},
+    {
+		"id": 12,
+		"inHome": "y",
+		"new": "y",
+		"special": "y",
+		"type": ["","virtual reality", "phones","video games", "speakers"],
+		"image": [
+			"images/product-images/Sony-XB31-EXTRA-BASS-Waterproof-Bluetooth-Speaker-2.jpg",
+			"images/product-images/Sony-XB31-EXTRA-BASS-Waterproof-Bluetooth-Speaker-1.jpg",
+			"images/product-images/Sony-XB31-EXTRA-BASS-Waterproof-Bluetooth-Speaker-3.jpg"
+		],
+		"title": "Sony XB31 EXTRA BASS Waterproof Bluetooth Speaker",
+		"size": ["all"],
+		"color": ["all","black"],
+		"price": 365.99,
+		"productTotalPriceCart": "",
+		"tag": ["speakers", "sale"],
+        "brand": "Sony",
+        "os": "",
+        "Manufacturer":"China",
+        "Warranty":"6 months",
+        "Connectivity": ["bluetooth", "Wi-Fi"],
+		"rate": 4,
+		"qty": 0,
+        "waterproof":["all","yes"],
+		"liked": "n",
+		"desc": "We Are Living In The Epoch Of Great Technical Progress, And We Are Sure That New Technologies Are Our Future.",
+        "comments":[
+            {
+                "userName":"Admin",
+                "userEmail":"admin@admin.com",
+                "userRate":4,
+                "userMassage":"this is a good product."
+            }
+        ]
+	}
+]

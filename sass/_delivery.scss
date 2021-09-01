@@ -1,0 +1,74 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+
+.delivery{
+    max-width: 800px;
+    margin: auto;
+    .delivery-title{
+        @extend %title;
+    }
+    .delivery-desc{
+        @extend %title-desc;
+    }
+    .delivery-info{
+        @extend %ulInDynamicTabs;
+    }
+    .delivery-info-content{
+        padding: 50px 0;
+        display: none;
+        .delivery-info-content-block{
+            margin-bottom: 50px ;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            .left{
+                grid-column: 1/8;
+            }
+            .right{
+                grid-column: 9/13;
+                .delivery-info-content-title{
+                    color: $primary-color;
+                }
+                span{
+                    display: block;
+                    margin-top: 20px;
+                }
+            }
+            .delivery-info-content-title{
+                font-size: 24px;
+                margin-bottom: 15px !important;
+            }
+            .delivery-info-content-subtitle{
+                @extend %title-desc;
+                text-align: left !important;
+                margin-bottom: 15px;
+            }
+            .delivery-info-content-desc{
+                font-size: 14px;
+                color: $gray-color;
+            }
+            ul{
+                list-style: disc inside;
+                font-size: 18px;
+                color: $gray-color;
+            }
+        }
+    }
+}
+
+// delivery media
+
+@include Sm{
+    .delivery-info-content-block{
+        .left{
+            grid-column: 1/13 !important;
+            margin-bottom: 30px !important;
+        }
+        .right{
+            grid-column: 1/13 !important;
+        }
+    }
+}

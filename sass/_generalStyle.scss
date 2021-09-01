@@ -1,0 +1,240 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+
+/* 2-General Style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1.5;
+}
+body{
+    font-family: 'Questrial', sans-serif;
+    color: $normal-color;
+    // height: 3000px;
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: capitalize;
+    margin-bottom: 0 !important;
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+p, label{
+    margin-bottom: 0;
+}
+.padd{
+    padding: 50px 0;
+}
+input, button, textarea{
+    outline: 0;
+    border: 0;
+    &:focus{
+        @extend %boxshadow;
+    }
+}
+/* bg hover style */
+.bg-hover{
+    background-color: $normal-color;
+    color: $white-color;
+}
+/* text hover style */
+.text-hover-blue{
+    color: $primary-color;
+    @include Transition;
+    &:hover{
+        color: $normal-color;
+    }
+}
+.bg-hover-blue{
+    color: $white-color !important;
+    background-color: $primary-color;
+    @include Transition;
+    &:hover{
+        background-color: $normal-color !important;
+    }
+}
+.text-hover-black{
+    @include Transition;
+    color: $normal-color;
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+/* overlay style */
+.overlay{
+    display: none;
+    position: fixed;
+    @include Dir(0, 0 ,0 ,0 );
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 8;
+    @include Transition;
+    &.open{
+        display: block !important;
+    }
+}
+
+.section-title{
+    margin-bottom: 20px !important;
+    font-size: 24px;
+    text-align: center;
+}
+// preloader style
+.preloader{
+    @include Dir(0,0,0,0);
+    display: none;
+    position: fixed;
+    background-color: $white-color;
+    overflow: hidden;
+    z-index: 20;
+    img{
+        @include heroImg;
+        @include WidHei(80px, 80px);
+        animation: rotate 2s linear  infinite;
+        -webkit-animation: rotate 2s linear  infinite;
+    }
+}
+@keyframes rotate{
+    0%{
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+}
+.loading-overlay{
+    @include Dir(0,0,0,0);
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    z-index: 20;
+}
+
+// back to top button style
+
+.backToTop{
+    position: fixed;
+    @include Dirrb(15px, 15px);
+    background-color: $white-color;
+    @include WidHei(60px, 60px);
+    @include borderR(50%);
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+    z-index: 15;
+    text-align: center;
+    color: $primary-color;
+}
+@include Sm{
+    .backToTop{
+        @include Dirrb(5px, 5px);
+        @include WidHei(40px, 40px);
+        @include borderR(50%);
+        line-height: 40px;
+    }
+    
+}
+// Alert and warning styles
+.alert{
+    display: none;
+}
+.warning{
+    z-index: 10;
+    position: fixed !important;
+    @include heroImg;
+    @include WidHei(300px, 80px);
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid $border;
+    @include borderR(10px);
+    display: none;
+    background-color: $white-color;
+}
+
+
+// product rate style at all pages
+
+.product-rate{
+    padding-top: 15px;
+    font-size: 12px;
+    word-spacing: -3px;
+    color: $gray-color;
+    i{
+        &.active{
+            color: $star-color;
+        }
+    }
+    .review{
+        margin-left: 5px;
+        font-size: 14px;
+        i{
+            margin: 0 5px;
+        }
+    }
+}
+
+
+// director Section Style
+
+.director{
+    padding: 15px 0 0;
+    .directorItems{
+        display: flex;
+        li{
+            margin-right: 20px;
+            position: relative;
+            font-size: 14px;
+            a{
+                color: $gray-color ;
+                &:hover{
+                    color: $primary-color   ;    
+                }
+            }
+            &:last-of-type{
+                a{
+                    color: $primary-color;
+                }
+                &:after{
+                    content: '';
+                }
+            }
+            &:after{
+                content: '/';
+                position: absolute;
+                right: -13px;
+                color: $gray-color;
+            }
+        }
+    }
+}
+
+
+// help class style => at delivery, payment pages
+.help{
+    padding: 10px 20px;
+    background-color: #EFF2FD;
+    span{
+        margin-left: 15px;
+    }
+    i{
+        color: $primary-color;
+        margin-right: 10px;
+    }
+}

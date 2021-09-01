@@ -1,0 +1,63 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+
+.compare{
+    .font18{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 36px;
+        margin-bottom: 30px !important;
+        text-align: center;
+    }
+    .compare-table{
+        overflow-x: auto;
+    }
+    .compare-content{
+        max-width: 100%;
+        width: 100%;
+        tr{
+            td{
+                border-bottom: 1px solid $border;
+                border-right: 1px solid $border;
+                padding: 20px 10px;
+                &:last-of-type{
+                    border-right: 0;
+                }
+            }
+        }
+        .compare-content-head{
+           border-bottom: 1px solid $border;
+           td{
+               padding: 20px;
+               i{
+                   font-size: 22px;
+                   cursor: pointer;
+               }
+            }
+        } 
+        .compare-content-body{
+            .productImg{
+                img{
+                    max-width: 100%;
+                    max-height: 350px;
+                }
+            }
+            .productDesc{
+                color: $gray-color;
+            }
+            .productBrand, .productColor, .productWaterproof, .productConnectivity{
+                text-transform: capitalize
+            }
+            .addToCart{
+                @include borderR(4px);
+                padding: 7px 20px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

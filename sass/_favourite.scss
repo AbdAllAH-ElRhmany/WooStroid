@@ -1,0 +1,51 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+
+.favourite{
+    .title{
+        font-size: 36px;
+        margin-bottom: 30px !important;
+        text-align: center;
+    }
+    .favourite-content{
+        .favourite-item{
+            margin-bottom: 30px;
+            position: relative;
+            .item-img{
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            .item-title, .item-price{
+                max-width: 100%;
+                margin-bottom: 7px;
+                letter-spacing: 0.32px;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .product-rate{
+                padding: 0;
+                margin-bottom: 7px;
+            }
+            .item-del{
+                position: absolute;
+                @include Dirtr(10px , 10px);
+                cursor: pointer;
+                font-size: 20px
+            }
+            .addToCart{
+                @include borderR(4px);
+                padding: 7px 20px;
+                text-transform: capitalize;
+                width: 75%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}

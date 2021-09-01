@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="images/logoIcon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/animate.css" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./style/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./style/main.min.css" />
+    <title>WooStroid | Home</title>
+</head>
+<body>
+    <header>
+        <div class="topheader">
+            <div class="container">
+               <div class="row">
+                   <div class="col-md-4 col-12 text-md-left text-center topheader-left">Hotline: <a href="tel: +201558061662" class="text-hover-black">+201558061662</a></div>
+                   <div class="col-md-4 col-12 text-center topheader-center">Free Shipping on all orders over $100</div>
+                   <div class="col-md-4 col-12 topheader-right">
+                        <ul class="justify-content-center justify-content-md-end">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008617848842" target="_blank" class="text-hover-black"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+               </div><!-- ./row --> 
+            </div><!-- ./container -->
+        </div><!-- ./topheader -->
+        <div class="midheader">
+            <div class="container">
+                <div class="midheader-content">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+                    <form action="#" method="POST" class="searchForm" autocomplete="off" onsubmit="setSearchValue(event)">
+                        <input type="text" placeholder="Product search" id="searchInput">
+                        <button name="searchBtn" class="bg-hover-blue" type="submit"><i class="fas fa-search"></i></button>
+                    </form><!-- ./searchForm -->
+                    <div class="control-list">
+                        <ul class="justify-content-end ">
+                            <li><a href="compare.html" class="text-hover-blue"><i class="fas fa-balance-scale"></i></a></li>
+                            <li><a href="favourite.html" class="text-hover-blue"><i class="far fa-heart"></i></a></li>
+                            <li class="dropdown">
+                                <a href="cart.html" class="text-hover-blue mr-2" id="cartIcon"><i class="fas fa-shopping-cart"></i><span class="cartNum bg-hover-blue" id="cartNum">0</span></a>
+                                <div class="menu">
+                                    <ul class="cart-items">  
+                                    </ul><!-- ./cart-items -->
+                                    <div class="cart-options">
+                                        <p class="cartTotal">subtotal: <span></span></p>
+                                        <a href="checkout.html"><button class="f"> <i class="fas fa-shopping-cart"></i> Checkout</button></a>
+                                        <a href="cart.html"><button class="l"> <i class="fas fa-eye"></i> View Cart</button></a>
+                                    </div><!-- ./cart-options -->
+                                </div><!-- ./menu -->
+                            </li><!-- ./dropdown -->
+                        </ul>
+                    </div><!-- ./control-list -->
+                </div><!-- ./midheader-content -->
+            </div><!-- ./container -->
+        </div><!-- ./midheader -->
+        <div class="bottomheader">
+            <div class="container">
+                <div class="bottomheader-content">
+                    <div class="category">
+                        <input type="checkbox" name="" class="d-none" id="category-check">
+                        <label for="category-check" class="bg-hover-blue d-flex justify-content-between">
+                            <p><i class="fa fa-bars fa-lg"></i></p>
+                            <p>Categories</p> 
+                            <p><i class="fas fa-chevron-down"></i></p>
+                        </label>
+                        <ul class="category-menu">
+                            <li class="dropdown">
+                                <a href="shop.html" class="position-relative text-hover-black datatypeFilter" data-type-filter="phones">phones</a>
+                                <ul class="cate-dropdown">
+                                        <h3>Phones</h3>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(5)">iPhone XS Max</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(2)">iPhone XS</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(2)">iPhone X</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(3)">iPhone 8</a><span class="sale">sale</span></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(4)">iPhone 8 plus</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(5)">iPhone 7 plus</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(3)">iPhone 7</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(4)">iPhone 6 plus</a></li>
+                                </ul><!-- ./cate-dropdown -->
+                            </li><!-- ./dropdown -->
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="tablets">tablets</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="smartwatches">smartwatches</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="headphones">headphones</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="speakers">speakers</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="virtual reality">virtual reality</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="video games">video games</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="fitness tracking">fitness tracking</a></li>
+                        </ul><!-- ./category-menu -->
+                    </div><!-- ./category -->
+                    <nav>
+                        <ul class="nav-content text-capitalize">
+                            <li><a href="index.html" class="text-hover-black active">home</a></li>
+                            <li><a href="delivery.html" class="text-hover-black">delivery</a></li>
+                            <li><a href="payment.html" class="text-hover-black">payment</a></li>
+                            <li><a href="contact.html" class="text-hover-black">contact</a></li>
+                            <li><a href="faq.html" class="text-hover-black">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="theme text-hover-blue"><a href="#">Purchase Theme!</a></div>
+                </div><!-- ./bottomheader-content -->
+            </div><!-- ./container -->
+        </div><!-- ./bottomheader -->
+        <div class="overlay"></div>
+        <div class="side-nav">
+            <div class="side-nav-content">
+                <div class="side-nav-icon">
+                    <i class="fas fa-bars openIcon"></i>
+                    <i class="fas fa-times closeIcon"></i>
+                </div><!-- ./side-nav-icon -->
+                <ul class="side-nav-list text-capitalize">
+                    <li><a href="index.html" class="text-hover-black active">home</a></li>
+                    <li><a href="delivery.html" class="text-hover-black">delivery</a></li>
+                    <li><a href="payment.html" class="text-hover-black">payment</a></li>
+                    <li><a href="contact.html" class="text-hover-black">contact</a></li>
+                    <li><a href="faq.html" class="text-hover-black">FAQ</a></li>
+                </ul>
+            </div><!-- ./side-nav-content -->
+        </div><!-- ./side-nav -->
+    </header>
+    <div class="warning"></div>
+    <div class="preloader"><img src="images/PinClipart.com_ground-hog-day-clip_1980971.png" alt=""></div>
+    <div class="backToTop"><i class="fas fa-chevron-up"></i></div>
+    <main>
+        <section class="banner">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="banner-img">
+                        <div class="banner-info">
+                            <span class="banner-subtitle">iPhone Xs</span>
+                            <h2 class="banner-title">Welcome to The Big Screens.</h2>
+                            <a href="shop.html" class="banner-link bg-hover-blue">shop now!</a>
+                        </div><!-- ./banner-info -->
+                    </div> <!-- ./banner-img -->
+                </div><!-- ./item -->
+                <div class="item">
+                    <div class="banner-img first">
+                        <div class="banner-info">
+                            <span class="banner-subtitle">Headphones</span>
+                            <h2 class="banner-title">Beats Solo3 Wireless On-Ear</h2>
+                            <a href="shop.html" class="banner-link bg-hover-blue">shop now!</a>
+                        </div><!-- ./banner-info -->
+                    </div> <!-- ./banner-img -->
+                </div><!-- ./item -->
+                <div class="item">
+                    <div class="banner-img second">
+                        <div class="banner-info">
+                            <span class="banner-subtitle">iPhone Xr</span>
+                            <h2 class="banner-title">Brilliant. In Every Way</h2>
+                            <a href="shop.html" class="banner-link bg-hover-blue">shop now!</a>
+                        </div><!-- ./banner-info -->
+                    </div> <!-- ./banner-img -->
+                </div><!-- ./item -->
+            </div><!-- ./owl-carousel -->
+        </section><!-- ./banner --> 
+        <section class="categories padd">
+            <div class="container">
+                <h3 class="section-title">categories</h3>
+                <div class="categories-content">
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="fitness tracking" >
+                            <img src="images/categories/08.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">fitness tracking</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="headphones" >
+                            <img src="images/categories/04.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">Headphones</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="phones" >
+                            <img src="images/categories/01.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">phones</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="smartwatches" >
+                            <img src="images/categories/03.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">smartwatches</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="speakers" >
+                            <img src="images/categories/05.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">speakers</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="tablets" >
+                            <img src="images/categories/02.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">tablets</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="virtual reality" >
+                            <img src="images/categories/06jpg.jpg" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">virtual reality</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                    <div class="categories-item text-hover-blue">
+                        <a href="shop.html" class="categories-item-content datatypeFilter" data-type-filter="video games" >
+                            <img src="images/categories/07.webp" class="categories-item-img" alt="">
+                            <p class="categories-item-title ">video games</p>
+                        </a><!-- ./categories-item-content -->
+                    </div><!-- ./categories-item -->
+                   
+                    
+                </div><!-- ./categories-content -->
+            </div><!-- ./container -->
+        </section><!-- ./categories -->
+        <section class="newProducts products padd">
+            <div class="container">
+                <h3 class="section-title">new products</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <h5><a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a></h5>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas active fa-star"></i>
+                            <i class="fas active fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                   
+                </div><!-- ./owl-carousel -->
+            </div><!-- ./container -->
+        </section><!-- ./newProducts -->
+        <section class="specialProducts products padd">
+            <div class="container">
+                <h3 class="section-title">special products</h3>
+                <div class="owl-carousel owl-theme">
+                    
+                    <div class="item">
+                        <img src="images/product-images/JBL-Pulse-3-Waterproof-Bluetooth-Wireless-Speaker-1-600x600.jpg" alt="" class="product-img">
+                        <a href="product.html" class="product-name text-hover-black">JBL Pulse 3 Waterproof Bluetooth Wireless Speaker</a>
+                        <span class="product-price">430$</span>
+                        <button class="addToCart bg-hover-blue"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div><!-- ./product-rate -->
+                    </div><!-- ./item -->
+                   
+                </div><!-- ./owl-carousel -->
+            </div><!-- ./container -->
+        </section><!-- ./newProducts -->
+        <section class="brands">
+            <div class="container">
+                <div class="brands-content">
+                    <div class="brand-item banner_1">
+                        <h5><a href="#" class="brand-title">Oculus Go</a></h5>
+                        <p class="brand-desc">When you want to experience the world.</p><!-- ./brand-desc -->
+                    </div><!-- ./brand-item -->
+                    <div class="brand-item banner_2">
+                        <h5><a href="#" class="brand-title">Goral Y5</a></h5>
+                        <p class="brand-desc">Smart Bracelet 0.96 inch TFT Color Screen</p><!-- ./brand-desc -->
+                    </div><!-- ./brand-item -->
+                    <div class="brand-item banner_3">
+                        <h5><a href="#" class="brand-title">JBL Pulse 3</a></h5>
+                        <p class="brand-desc">Waterproof Bluetooth Wireless Speaker.</p><!-- ./brand-desc -->
+                    </div><!-- ./brand-item -->
+                    <div class="brand-item banner_4">
+                        <h5><a href="#" class="brand-title">AirPods</a></h5>
+                        <p class="brand-desc">Wireless. Effortless. Magical.</p><!-- ./brand-desc -->
+                    </div><!-- ./brand-item -->
+                </div><!-- ./brands-content -->
+            </div><!-- ./container -->
+        </section><!-- ./brands -->
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content-top padd">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <ul class="footer-category ">
+                            <li><a href="shop.html">phones</a></li>
+                            <li><a href="shop.html" >tablets</a></li>
+                            <li><a href="shop.html" >smartwatches</a></li>
+                            <li><a href="shop.html" >headphones</a></li>
+                            <li><a href="shop.html" >speackers</a></li>
+                        </ul><!-- ./footer-category -->
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12 mb-3">
+                        <ul class="footer-category">
+                            <li><a href="shop.html" >virtual reality</a></li>
+                            <li><a href="shop.html" >video games</a></li>
+                            <li><a href="shop.html" >fitness tracking</a></li>
+                        </ul><!-- ./footer-category -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12"></div>
+                    <div class="col-lg-5 col-md-10 col-12 offset-md-1 offset-lg-0 text-md-center">
+                        <form action="#" class="signUpForm">
+                            <h4 class="form-title">Sign Up for WooStroid Updates to Receive Information
+                                About New Arrivals and Future Events.</h4>
+                                <input type="email" class="d-sm-block" placeholder="Enter your email">
+                                <button type="submit" class="subscribeBtn bg-hover-blue">Subscribe!</button>
+                        </form><!-- ./signUpForm -->
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008617848842" target="_blank" class="text-hover-black"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!-- ./row -->
+            </div><!-- ./footer-content-top -->
+            <div class="footer-content-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-9 col-12">
+                        <ul class=" text-capitalize">
+                            <li><a href="index.html" class="text-hover-black active">home</a></li>
+                            <li><a href="delivery.html" class="text-hover-black">delivery</a></li>
+                            <li><a href="payment.html" class="text-hover-black">payment</a></li>
+                            <li><a href="contact.html" class="text-hover-black">contact</a></li>
+                            <li><a href="faq.html" class="text-hover-black">FAQ</a></li>
+                        </ul>
+                        <p class="footer-desc text-center text-lg-left mb-3">WooStroid2 — Multipurpose WP Theme with Elementor Page Builder. © 2020 </p>
+                    </div>
+                    <div class="col-lg-3 col-12 text-center text-lg-left">
+                        <img src="images/payment.png" alt="">
+                    </div>
+                </div><!-- ./row -->
+            </div><!-- ./footer-content-bottom -->
+        </div><!-- ./container -->
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/data.json"></script>
+    <script src="js/drowProductsUi.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

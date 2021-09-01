@@ -1,0 +1,87 @@
+@import 'utilities';
+@import 'media';
+@import 'extended';
+@import 'generalStyle';
+
+
+.checkout{
+    max-width: 570px;
+    margin: auto;
+    .title{
+        font-size: 36px;
+        margin-bottom: 30px !important;
+    }
+    .checkout-content{
+        .check-content-title{
+            font-size: 20px;
+            margin: 25px 0 !important; 
+        }
+        label{
+            display: block;
+            margin-top: 15px;
+            span{
+                font-size: 14px;
+            }
+        }
+        input, textarea,select{
+            border: 1px solid $border;
+            width: 100%;
+            padding: 8px 11px;
+            margin-bottom: 10px;
+        }
+        textarea{
+            min-height: 150px;
+        }
+        button{
+            @extend %checkoutBtn;
+        }
+        .order-content{
+            border: 1px solid $border;
+            width: 100%;
+            thead{
+                @extend %tableHeader;
+            }
+            td{
+                padding: 15px;
+                border-bottom: 1px solid $border;
+                border-bottom: 1px solid $border;
+            }
+            .content{
+                .item{
+                    .item-info{
+                        width: 75%;
+                        font-size: 14px;
+                    }
+                    .item-price{
+                        width: 25%;
+                        font-size: 20px;
+                    }
+                }
+            }
+            tfoot{
+                tr{
+                    td:first-of-type{
+                        text-align: right;
+                    }
+                }
+                .cartTotal.last{
+                    font-size: 24px !important;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+// checkout media
+
+@include Xs{
+    td{
+        padding: 10px !important;
+    }
+    .item-info{
+        width: 80% !important;
+    }
+    .item-price{
+        width: 20% !important;
+    }
+}

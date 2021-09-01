@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="shortcut icon" href="images/logoIcon.png" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/main.min.css" />
+    <title>WooStroid | Cart</title>
+</head>
+<body>
+    <header>
+        <div class="topheader">
+            <div class="container">
+               <div class="row">
+                   <div class="col-md-4 col-12 text-md-left text-center topheader-left">Hotline: <a href="tel: +201558061662" class="text-hover-black">+201558061662</a></div>
+                   <div class="col-md-4 col-12 text-center topheader-center">Free Shipping on all orders over $100</div>
+                   <div class="col-md-4 col-12 topheader-right">
+                        <ul class="justify-content-center justify-content-md-end">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008617848842" target="_blank" class="text-hover-black"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+               </div><!-- ./row --> 
+            </div><!-- ./container -->
+        </div><!-- ./topheader -->
+        <div class="midheader">
+            <div class="container">
+                <div class="midheader-content">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+                    <form action="#" method="POST" class="searchForm" autocomplete="off" onsubmit="setSearchValue(event)">
+                        <input type="text" placeholder="Product search" id="searchInput">
+                        <button name="searchBtn" class="bg-hover-blue" type="submit"><i class="fas fa-search"></i></button>
+                    </form><!-- ./searchForm -->
+                    <div class="control-list">
+                        <ul class="justify-content-end ">
+                            <li><a href="compare.html" class="text-hover-blue"><i class="fas fa-balance-scale"></i></a></li>
+                            <li><a href="favourite.html" class="text-hover-blue"><i class="far fa-heart"></i></a></li>
+                            <li class="dropdown">
+                                <a href="cart.html" class="text-hover-blue mr-2" id="cartIcon"><i class="fas fa-shopping-cart"></i><span class="cartNum bg-hover-blue" id="cartNum">0</span></a>
+                                <div class="menu">
+                                    <ul class="cart-items">  
+                                    </ul><!-- ./cart-items -->
+                                    <div class="cart-options">
+                                        <p class="cartTotal">subtotal: <span></span></p>
+                                        <a href="checkout.html"><button class="f"> <i class="fas fa-shopping-cart"></i> Checkout</button></a>
+                                        <a href="cart.html"><button class="l"> <i class="fas fa-eye"></i> View Cart</button></a>
+                                    </div><!-- ./cart-options -->
+                                </div><!-- ./menu -->
+                            </li><!-- ./dropdown -->
+                        </ul>
+                    </div><!-- ./control-list -->
+                </div><!-- ./midheader-content -->
+            </div><!-- ./container -->
+        </div><!-- ./midheader -->
+        <div class="bottomheader">
+            <div class="container">
+                <div class="bottomheader-content">
+                    <div class="category">
+                        <input type="checkbox" name="" class="d-none" id="category-check">
+                        <label for="category-check" class="bg-hover-blue d-flex justify-content-between">
+                            <p><i class="fa fa-bars fa-lg"></i></p>
+                            <p>Categories</p> 
+                            <p><i class="fas fa-chevron-down"></i></p>
+                        </label>
+                        <ul class="category-menu">
+                            <li class="dropdown">
+                                <a href="shop.html" class="position-relative text-hover-black datatypeFilter" data-type-filter="phones">phones</a>
+                                <ul class="cate-dropdown">
+                                        <h3>Phones</h3>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(5)">iPhone XS Max</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(2)">iPhone XS</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(2)">iPhone X</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(3)">iPhone 8</a><span class="sale">sale</span></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(4)">iPhone 8 plus</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(5)">iPhone 7 plus</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(3)">iPhone 7</a></li>
+                                        <li><a href="product.html" class="text-hover-black" onclick="setProductIdDetails(4)">iPhone 6 plus</a></li>
+                                </ul><!-- ./cate-dropdown -->
+                            </li><!-- ./dropdown -->
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="tablets">tablets</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="smartwatches">smartwatches</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="headphones">headphones</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="speakers">speakers</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="virtual reality">virtual reality</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="video games">video games</a></li>
+                            <li><a href="shop.html" class="text-hover-black datatypeFilter" data-type-filter="fitness tracking">fitness tracking</a></li>
+                        </ul><!-- ./category-menu -->
+                    </div><!-- ./category -->
+                    <nav>
+                        <ul class="nav-content text-capitalize">
+                            <li><a href="index.html" class="text-hover-black ">home</a></li>
+                            <li><a href="delivery.html" class="text-hover-black ">delivery</a></li>
+                            <li><a href="payment.html" class="text-hover-black">payment</a></li>
+                            <li><a href="contact.html" class="text-hover-black">contact</a></li>
+                            <li><a href="faq.html" class="text-hover-black">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="theme text-hover-blue"><a href="#">Purchase Theme!</a></div>
+                </div><!-- ./bottomheader-content -->
+            </div><!-- ./container -->
+        </div><!-- ./bottomheader -->
+        <div class="overlay"></div>
+        <div class="side-nav">
+            <div class="side-nav-content">
+                <div class="side-nav-icon">
+                    <i class="fas fa-bars openIcon"></i>
+                    <i class="fas fa-times closeIcon"></i>
+                </div><!-- ./side-nav-icon -->
+                <ul class="side-nav-list text-capitalize">
+                    <li><a href="index.html" class="text-hover-black ">home</a></li>
+                    <li><a href="delivery.html" class="text-hover-black ">delivery</a></li>
+                    <li><a href="payment.html" class="text-hover-black">payment</a></li>
+                    <li><a href="contact.html" class="text-hover-black">contact</a></li>
+                    <li><a href="faq.html" class="text-hover-black">FAQ</a></li>
+                </ul>
+            </div><!-- ./side-nav-content -->
+        </div><!-- ./side-nav -->
+    </header>
+    <div class="backToTop"><i class="fas fa-chevron-up"></i></div>
+    <div class="warning"></div>
+    <main>
+        <section class="director">
+            <div class="container">
+                <ul class="directorItems">
+                    <li><a href="index.html" class="text-hover-black">Home</a></li>
+                    <li>Cart</li>
+                </ul><!-- ./directorItems -->    
+            </div><!-- ./container -->
+        </section><!-- ./director -->
+
+        <section class="cart padd">
+            <div class="container">
+                <h2 class="title text-center">Cart</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <table class="cart-content">
+                            <thead class="cart-content-header">
+                                <tr>
+                                    <td class="delIcon"></td>
+                                    <td class="productImg"></td>
+                                    <td>product</td>
+                                    <td>price</td>
+                                    <td>quantity</td>
+                                    <td>subtotal</td>
+                                </tr>
+                            </thead><!-- ./cart-content-header -->
+                            <tbody class="cart-content-body">
+                                
+                            </tbody><!-- ./cart-content-body -->
+                        </table><!-- ./cart-content -->
+                        <div class="cart-options">
+                            <a href="cart.html"><button class="option f"><i class="fas fa-sync-alt"></i> update cart</button></a>
+                            <a href="shop.html" ><button class="option l bg-hover-blue">continue shopping</button></a>
+                        </div><!-- ./cart-options -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="cart-total-content">
+                            <h3 class="cart-total-title">cart total</h3>
+                            <div><p >subtotal</p><span class="subtotal cartTotal"><span></span></span></div>
+                           <div><p >total </p><span class="total cartTotal"><span></span></span></div>
+                            <a href="checkout.html"><button class="checkout"><i class="fas fa-check"></i> Proceed to checkout</button></a>
+                        </div><!-- ./cart-total-content -->
+                    </div>
+                </div><!-- ./row -->
+            </div><!-- ./container -->
+        </section><!-- ./cart -->
+    
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content-top padd">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <ul class="footer-category ">
+                            <li><a href="shop.html">phones</a></li>
+                            <li><a href="shop.html" >tablets</a></li>
+                            <li><a href="shop.html" >smartwatches</a></li>
+                            <li><a href="shop.html" >headphones</a></li>
+                            <li><a href="shop.html" >speackers</a></li>
+                        </ul><!-- ./footer-category -->
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12 mb-3">
+                        <ul class="footer-category">
+                            <li><a href="shop.html" >virtual reality</a></li>
+                            <li><a href="shop.html" >video games</a></li>
+                            <li><a href="shop.html" >fitness tracking</a></li>
+                        </ul><!-- ./footer-category -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12"></div>
+                    <div class="col-lg-5 col-md-10 col-12 offset-md-1 offset-lg-0 text-md-center">
+                        <form action="#" class="signUpForm">
+                            <h4 class="form-title">Sign Up for WooStroid Updates to Receive Information
+                                About New Arrivals and Future Events.</h4>
+                                <input type="email" class="d-sm-block" placeholder="Enter your email">
+                                <button type="submit" class="subscribeBtn bg-hover-blue">Subscribe!</button>
+                        </form><!-- ./signUpForm -->
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008617848842" target="_blank" class="text-hover-black"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#" target="_blank" class="text-hover-black"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!-- ./row -->
+            </div><!-- ./footer-content-top -->
+            <div class="footer-content-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-9 col-12">
+                        <ul class=" text-capitalize">
+                            <li><a href="index.html" class="text-hover-black">home</a></li>
+                            <li><a href="delivery.html" class="text-hover-black">delivery</a></li>
+                            <li><a href="payment.html" class="text-hover-black">payment</a></li>
+                            <li><a href="contact.html" class="text-hover-black">contact</a></li>
+                            <li><a href="faq.html" class="text-hover-black">FAQ</a></li>
+                        </ul>
+                        <p class="footer-desc text-center text-lg-left mb-3">WooStroid2 — Multipurpose WP Theme with Elementor Page Builder. © 2020 </p>
+                    </div>
+                    <div class="col-lg-3 col-12 text-center text-lg-left">
+                        <img src="images/payment.png" alt="">
+                    </div>
+                </div><!-- ./row -->
+            </div><!-- ./footer-content-bottom -->
+        </div><!-- ./container -->
+    </footer>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
