@@ -50,7 +50,7 @@
             }
             .contact-info-content-subtitle{
                 @extend %title-desc;
-                text-align: left;
+                text-align: left !important;
                 margin-bottom: 20px;
             }
         }

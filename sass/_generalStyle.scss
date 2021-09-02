@@ -90,16 +90,20 @@ input, button, textarea{
 // preloader style
 .preloader{
     @include Dir(0,0,0,0);
-    display: none;
+    // display: none;
     position: fixed;
     background-color: $white-color;
     overflow: hidden;
     z-index: 20;
-    img{
+    div{
         @include heroImg;
+        display: block;
         @include WidHei(80px, 80px);
-        animation: rotate 2s linear  infinite;
-        -webkit-animation: rotate 2s linear  infinite;
+        img{
+            animation: rotate 2s linear  infinite;
+            -webkit-animation: rotate 2s linear  infinite;
+            max-width: 100%;
+        }
     }
 }
 @keyframes rotate{
@@ -225,6 +229,22 @@ input, button, textarea{
     }
 }
 
+@include Xs{
+    .director{
+        .directorItems{
+            li{
+                font-size: 13px !important;
+                &:last-of-type{
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 115px;
+                }
+            }
+        }
+    }
+}
 
 // help class style => at delivery, payment pages
 .help{

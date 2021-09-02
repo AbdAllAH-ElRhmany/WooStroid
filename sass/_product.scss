@@ -9,6 +9,7 @@
     position: relative;
     border-bottom: 1px solid $border;
     .product-info{
+        text-align: left !important;
         .product-imgs{
             img{
                 max-width: 100%;
@@ -282,6 +283,16 @@
         .addToCart{
             width: 160px !important;
             margin-left: 15px !important;
+        }
+    }
+    .addToPages{
+        justify-content: center !important;
+        div{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        i{
+            margin-right: 5px;
         }
     }
 }

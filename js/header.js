@@ -242,3 +242,15 @@ let setSearchValue = (e)=>{
 	localStorage.setItem('dataSearchValue', JSON.stringify(e.target.searchInput.value));
 	window.location.assign('shop.html')
 }
+
+
+(function () {
+	var lastClear = localStorage.getItem('lastClear'),
+		time_now  = new Date().getDate();
+	if ((time_now  > lastClear)) {
+	  localStorage.clear();
+  
+	  localStorage.setItem('lastClear', time_now + 2);
+	}
+  
+  })();
