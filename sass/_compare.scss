@@ -40,6 +40,11 @@
                }
             }
         } 
+        p{
+            .dot{
+                display: none;
+            }
+        }
         .compare-content-body{
             .productImg{
                 img{
@@ -53,6 +58,7 @@
             .productBrand, .productColor, .productWaterproof, .productConnectivity{
                 text-transform: capitalize
             }
+            
             .addToCart{
                 @include borderR(4px);
                 padding: 7px 20px;

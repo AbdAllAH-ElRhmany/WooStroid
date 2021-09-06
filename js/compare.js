@@ -54,15 +54,15 @@ let drowCompareUi;
             proManuf.innerHTML = `<td>Manufacturer:</td>
             <td><p class="productManufacturer font18">${pro1.Manufacturer}</p></td>`;
             proColor.innerHTML = `<td>Color:</td>
-            <td><p class="productColor font18">${pro1.color.map(i => ' '+i )}</p></td>`;
+            <td><p class="productColor font18">${pro1.color.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>`;
             proOs.innerHTML = `<td>OS:</td>
             <td><p class="productOS font18">${pro1.os}</p></td>`;
             proSize.innerHTML = `<td>Memory:</td>
-            <td><p class="productMemory font18">${pro1.size.map(i => ' '+i )}</p></td>`;
+            <td><p class="productMemory font18">${pro1.color.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>`;
             proWarr.innerHTML = `<td>Warranty:</td>
             <td><p class="productWarranty font18">${pro1.Warranty}</p></td>`;
             proWater.innerHTML = `<td>Waterproof:</td>
-            <td><p class="productWaterproof font18">${pro1.waterproof}</p></td>`;
+            <td><p class="productWaterproof font18">${pro1.waterproof.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>`;
             proConn.innerHTML = `<td>Connectivity:</td>
             <td><p class="productConnectivity font18">${pro1.Connectivity}</p></td>`;
             proAdd.innerHTML = ` <td></td>
@@ -106,19 +106,19 @@ let drowCompareUi;
             <td><p class="productManufacturer font18">${pro1.Manufacturer}</p></td>
             <td><p class="productManufacturer font18">${pro2.Manufacturer}</p></td>`;
             proColor.innerHTML = `<td>Color:</td>
-            <td><p class="productColor font18">${pro1.color.map(i => ' '+i )}</p></td>
-            <td><p class="productColor font18">${pro2.color.map(i => ' '+i )}</p></td>`;
+            <td><p class="productColor font18">${pro1.color.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>
+            <td><p class="productColor font18">${pro2.color.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>`;
             proOs.innerHTML = `<td>OS:</td><td><p class="productOS font18">${pro1.os}</p></td>
             <td><p class="productOS font18">${pro2.os}</p></td>`;
             proSize.innerHTML = `<td>Memory:</td>
-            <td><p class="productMemory font18">${pro1.size.map(i => ' '+i )}</p></td>
-            <td><p class="productMemory font18">${pro2.size.map(i => ' '+i )}</p></td>`;
+            <td><p class="productMemory font18">${pro1.color.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>
+            <td><p class="productMemory font18">${pro2.color.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>`;
             proWarr.innerHTML = `<td>Warranty:</td>
             <td><p class="productWarranty font18">${pro1.Warranty}</p></td>
             <td><p class="productWarranty font18">${pro2.Warranty}</p></td>`;
             proWater.innerHTML = `<td>Waterproof:</td>
-            <td><p class="productWaterproof font18">${pro1.waterproof}</p></td>
-            <td><p class="productWaterproof font18">${pro2.waterproof}</p></td>`;
+            <td><p class="productWaterproof font18">${pro1.waterproof.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>
+            <td><p class="productWaterproof font18">${pro2.waterproof.map(i => `<span style="display: ${i == 'all'? "none":"inline"}"> ${i}<span class="dot">,</span> </span>` ).join('')}</p></td>`;
             proConn.innerHTML = `<td>Connectivity:</td>
             <td><p class="productConnectivity font18">${pro1.Connectivity}</p></td>
             <td><p class="productConnectivity font18">${pro2.Connectivity}</p></td>`;
@@ -142,3 +142,6 @@ let delFromCompare = (id) => {
 	localStorage.setItem('compareList', JSON.stringify(compareList));
 	drowCompareUi(compareList);
 };
+
+$(' td p .dot:last').hide();
+document.querySelectorAll('td p span:last-child .dot').forEach(i=>i.style.display="none")
