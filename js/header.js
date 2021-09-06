@@ -56,7 +56,7 @@ var getData;
 
 		}
 	};
-	xhttp.open("GET", "/js/data.json", false);
+	xhttp.open("GET", "https://abdallah-elrhmany.github.io/WooStroid/js/data.json", false);
 	xhttp.send();
 })();
 let data = JSON.parse(localStorage.getItem('data')) ? JSON.parse(localStorage.getItem('data')) : products ;
